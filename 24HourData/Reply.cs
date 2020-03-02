@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TwentyFourHour.Data
 {
-    class Reply
+    public class Reply : Comment 
     {
+        public Comment ReplyComment { get; set; }
     }
 }
