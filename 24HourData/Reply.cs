@@ -8,6 +8,10 @@ namespace TwentyFourHour.Data
 {
     public class Reply : Comment 
     {
+        public Guid OwnerId;
+
         public Comment ReplyComment { get; set; }
+        public string Content { get; set; }
+        public DateTimeOffset CreatedUtc { get; set; }
     }
 }

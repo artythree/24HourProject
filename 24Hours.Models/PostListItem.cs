@@ -11,6 +11,6 @@ namespace _24Hours.Models
         // How posts will be displayed by GetPosts()
         public int PostId { get; set; }
         public string Title { get; set; }
-
+        //EAC: ask Sean to consider adding: [Display(Name="Created")] public DateTimeOffset CreatedUtc { get; set }
     }
 }
