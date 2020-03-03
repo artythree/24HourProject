@@ -32,5 +32,6 @@ namespace TwentyFourHour.Data
         }
 
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Reply> Replies { get; set; }//EAC added this line so ReplyService.cs > CreateReply() > ctx.Replies.Add(entity) could refer to this
     }
 }
