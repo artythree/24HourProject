@@ -211,6 +211,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -403,6 +404,9 @@
     <ProjectReference Include="..\24Hours.Models\TwentyFourHours.Models.csproj">
       <Project>{929516D0-6DA5-4DF8-B518-5FDD0F5E1432}</Project>
       <Name>TwentyFourHours.Models</Name>
+    <ProjectReference Include="..\24HourData\TwentyFourHour.Data.csproj">
+      <Project>{5D425A19-CA97-46D8-B5F1-742723C38D6E}</Project>
+      <Name>TwentyFourHour.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
