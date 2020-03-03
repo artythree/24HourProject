@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TwentyFourHour.Data;
 
 namespace _24Hour.Services
 {
@@ -20,7 +21,7 @@ namespace _24Hour.Services
                             e =>
                                 new CommentsListItem
                                 {
-                                    Arthor = e.Arthor,
+                                    Author = e.Author,
                                     Text = e.Text,
                                     CommentPost = e.CommentPost,
                                 }
@@ -36,11 +37,11 @@ namespace _24Hour.Services
                 var entity =
                     ctx
                         .Comment
-                        .Single(e => e.Arthor == id && e.Authur == _userId);
+                        .Single(e => e.Author == id && e.Author == _userId);
                 return
                     new CommentDetail
                     {
-                        Arthor = entity.Arthor,
+                        Author = entity.Author,
                         Text = entity.Text,
                         CommentPost = entity.CommentPost,
 
