@@ -209,8 +209,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -396,6 +397,13 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\24Hour.Services\TwentyFourHour.Services.csproj">
+      <Project>{B6E6114E-E429-49DA-AE45-43FFFFD7505C}</Project>
+      <Name>TwentyFourHour.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\24Hours.Models\TwentyFourHours.Models.csproj">
+      <Project>{929516D0-6DA5-4DF8-B518-5FDD0F5E1432}</Project>
+      <Name>TwentyFourHours.Models</Name>
     <ProjectReference Include="..\24HourData\TwentyFourHour.Data.csproj">
       <Project>{5D425A19-CA97-46D8-B5F1-742723C38D6E}</Project>
       <Name>TwentyFourHour.Data</Name>
